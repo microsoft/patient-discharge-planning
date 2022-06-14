@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Role id="{8e4266c5-5b7d-ec11-8d21-0022482cf4fd}" name="Discharge Planning User" isinherited="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Role id="{11dacb66-edeb-ec11-bb3d-000d3a1271cc}" name="Discharge Planning Administration" isinherited="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvActivateSynchronousWorkflow" level="Basic" />
@@ -30,15 +30,20 @@
     <RolePrivilege name="prvAssignActivity" level="Basic" />
     <RolePrivilege name="prvAssignAsyncOperation" level="Basic" />
     <RolePrivilege name="prvAssignConnection" level="Local" />
+    <RolePrivilege name="prvAssignhsa_PatientStay" level="Global" />
     <RolePrivilege name="prvAssignmsdyn_sequencetarget" level="Local" />
     <RolePrivilege name="prvAssignmsdyn_sequencetargetstep" level="Local" />
+    <RolePrivilege name="prvAssignmsemr_encounter" level="Global" />
     <RolePrivilege name="prvAssignWorkflow" level="Basic" />
     <RolePrivilege name="prvAssignWorkflowSession" level="Basic" />
     <RolePrivilege name="prvCreateActivity" level="Basic" />
+    <RolePrivilege name="prvCreatehsa_PatientStay" level="Global" />
     <RolePrivilege name="prvCreatemsdyn_extendedusersetting" level="Basic" />
     <RolePrivilege name="prvCreatemsdyn_sequencetargetstep" level="Local" />
     <RolePrivilege name="prvCreatemsdyn_workqueuestate" level="Global" />
     <RolePrivilege name="prvCreatemsdyn_workqueueusersetting" level="Basic" />
+    <RolePrivilege name="prvCreatemsemr_encounter" level="Global" />
+    <RolePrivilege name="prvCreatemsemr_location" level="Global" />
     <RolePrivilege name="prvCreateNewProcess" level="Global" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
     <RolePrivilege name="prvCreateTranslationProcess" level="Global" />
@@ -65,13 +70,13 @@
     <RolePrivilege name="prvReadComplexControl" level="Global" />
     <RolePrivilege name="prvReadConnection" level="Local" />
     <RolePrivilege name="prvReadConnectionRole" level="Global" />
-    <RolePrivilege name="prvReadContact" level="Basic" />
+    <RolePrivilege name="prvReadContact" level="Global" />
     <RolePrivilege name="prvReadCustomization" level="Global" />
     <RolePrivilege name="prvReadEntity" level="Global" />
     <RolePrivilege name="prvReadEntityKey" level="Global" />
     <RolePrivilege name="prvReadEntityMap" level="Global" />
     <RolePrivilege name="prvReadHierarchyRule" level="Global" />
-    <RolePrivilege name="prvReadhsa_PatientStay" level="Local" />
+    <RolePrivilege name="prvReadhsa_PatientStay" level="Global" />
     <RolePrivilege name="prvReadmsdyn_extendedusersetting" level="Basic" />
     <RolePrivilege name="prvReadmsdyn_salesaccelerationsettings" level="Global" />
     <RolePrivilege name="prvReadmsdyn_salestag" level="Local" />
@@ -81,7 +86,7 @@
     <RolePrivilege name="prvReadmsdyn_workqueuerecord" level="Global" />
     <RolePrivilege name="prvReadmsdyn_workqueuestate" level="Global" />
     <RolePrivilege name="prvReadmsdyn_workqueueusersetting" level="Basic" />
-    <RolePrivilege name="prvReadmsemr_encounter" level="Basic" />
+    <RolePrivilege name="prvReadmsemr_encounter" level="Global" />
     <RolePrivilege name="prvReadmsemr_location" level="Global" />
     <RolePrivilege name="prvReadNewProcess" level="Global" />
     <RolePrivilege name="prvReadOptionSet" level="Global" />
@@ -113,6 +118,8 @@
     <RolePrivilege name="prvReadWebResource" level="Global" />
     <RolePrivilege name="prvReadWorkflow" level="Global" />
     <RolePrivilege name="prvReadWorkflowSession" level="Global" />
+    <RolePrivilege name="prvSharehsa_PatientStay" level="Global" />
+    <RolePrivilege name="prvSharemsemr_encounter" level="Global" />
     <RolePrivilege name="prvShareUserEntityUISettings" level="Basic" />
     <RolePrivilege name="prvShareWorkflow" level="Basic" />
     <RolePrivilege name="prvShareWorkflowSession" level="Basic" />
@@ -120,12 +127,14 @@
     <RolePrivilege name="prvWriteActivity" level="Basic" />
     <RolePrivilege name="prvWriteAsyncOperation" level="Basic" />
     <RolePrivilege name="prvWriteConnection" level="Local" />
-    <RolePrivilege name="prvWritehsa_PatientStay" level="Local" />
+    <RolePrivilege name="prvWritehsa_PatientStay" level="Global" />
     <RolePrivilege name="prvWritemsdyn_extendedusersetting" level="Basic" />
     <RolePrivilege name="prvWritemsdyn_sequencetarget" level="Local" />
     <RolePrivilege name="prvWritemsdyn_sequencetargetstep" level="Local" />
     <RolePrivilege name="prvWritemsdyn_workqueuestate" level="Global" />
     <RolePrivilege name="prvWritemsdyn_workqueueusersetting" level="Basic" />
+    <RolePrivilege name="prvWritemsemr_encounter" level="Global" />
+    <RolePrivilege name="prvWritemsemr_location" level="Global" />
     <RolePrivilege name="prvWriteNewProcess" level="Global" />
     <RolePrivilege name="prvWriteSharePointData" level="Global" />
     <RolePrivilege name="prvWriteTranslationProcess" level="Global" />
