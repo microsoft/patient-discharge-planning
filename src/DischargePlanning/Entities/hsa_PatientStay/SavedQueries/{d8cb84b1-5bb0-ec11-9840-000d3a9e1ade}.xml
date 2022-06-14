@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d8cb84b1-5bb0-ec11-9840-000d3a9e1ade}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="hsa_name" select="1" icon="1" preview="1">
+        <row name="result" id="hsa_patientstayid">
+          <cell name="hsa_name" width="86" />
+          <cell name="a_d2ca70b68dd34957948f9bb5c93e96ee.fullname" width="173" />
+          <cell name="hsa_primarydiagnosis" width="136" />
+          <cell name="hsa_dischargedatetarget" width="114" />
+          <cell name="hsa_dischargeto" width="100" />
+          <cell name="hsa_insurancecoverage" width="100" />
+          <cell name="hsa_currentlengthofstay" width="68" />
+          <cell name="hsa_ancillaryservices" width="100" />
+          <cell name="hsa_patientmobilityscore" width="100" />
+          <cell name="hsa_durablemedicalequipmentrequired" width="211" />
+          <cell name="hsa_avoidabledelay" width="247" />
+          <cell name="hsa_criteriafordischarge" width="250" />
+          <cell name="hsa_admittedfrom" width="100" />
+          <cell name="hsa_intakedatetime" width="153" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="hsa_patientstay">
+          <attribute name="hsa_patientstayid" />
+          <attribute name="hsa_name" />
+          <order attribute="hsa_name" descending="false" />
+          <attribute name="hsa_primarydiagnosis" />
+          <attribute name="hsa_intakedatetime" />
+          <attribute name="hsa_currentlengthofstay" />
+          <attribute name="hsa_ancillaryservices" />
+          <attribute name="hsa_dischargeto" />
+          <attribute name="hsa_patientmobilityscore" />
+          <attribute name="hsa_durablemedicalequipmentrequired" />
+          <attribute name="hsa_insurancecoverage" />
+          <attribute name="hsa_admittedfrom" />
+          <attribute name="hsa_avoidabledelay" />
+          <attribute name="hsa_criteriafordischarge" />
+          <attribute name="hsa_dischargedatetarget" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="hsa_dischargedatetarget" operator="next-x-days" value="2" />
+          </filter>
+          <link-entity alias="a_d2ca70b68dd34957948f9bb5c93e96ee" name="contact" to="hsa_patient" from="contactid" link-type="outer" visible="false">
+            <attribute name="fullname" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.1.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Discharging soon" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

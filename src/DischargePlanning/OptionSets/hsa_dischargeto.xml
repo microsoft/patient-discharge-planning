@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="hsa_dischargeto" localizedName="Admit/Discharge Locations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Admit/Discharge Locations" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="123000000" ExternalValue="">
+      <labels>
+        <label description="🏠 Home" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="123000001" ExternalValue="">
+      <labels>
+        <label description="👩‍⚕️ Skilled Nursing Facility" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="123000002" ExternalValue="">
+      <labels>
+        <label description="🏢 Rehab Center" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="123000003" ExternalValue="">
+      <labels>
+        <label description="🧓 Assisted Living" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="123000004" ExternalValue="">
+      <labels>
+        <label description="🛌 Long Term Acute Care" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>
