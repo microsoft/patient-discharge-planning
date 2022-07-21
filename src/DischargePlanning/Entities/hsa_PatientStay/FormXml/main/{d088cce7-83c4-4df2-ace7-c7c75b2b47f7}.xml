@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d088cce7-83c4-4df2-ace7-c7c75b2b47f7}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{31a1bbc6-3604-4651-a13c-b58257c41770}" IsUserDefined="1" name="planning-tab">
+          <labels>
+            <label description="Discharge Planning" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{38d68a08-3cbd-4c50-b2a4-09c16f8cb8aa}" name="section_general">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{335e9082-fb36-4fe0-8733-29dc86e577a1}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed122c1e-22ac-4bc2-a8f2-bef821f94005}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Patient" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_patient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_patient" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5ed61f1-03bf-4550-97af-1a47bf88214b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Ancillary Services" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_ancillaryservices" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="hsa_ancillaryservices" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{085883a8-989b-4c2f-b761-bbb7188cc4c5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Avoidable Delay" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_avoidabledelay" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="hsa_avoidabledelay" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2fbe663c-de8f-42f0-b5ca-18d2b84c1e56}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Criteria for Discharge" languagecode="1033" />
+                        </labels>
+                        <control id="header_hsa_criteriafordischarge" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="hsa_criteriafordischarge" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{34cd8f98-71f8-421a-a609-c712da97209a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Discharge To" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_dischargeto" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="hsa_dischargeto" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{088ff3b4-a77c-4ca2-89a9-7bbbc3a4c9e7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Durable Medical Equipment Required" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_durablemedicalequipmentrequired" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="hsa_durablemedicalequipmentrequired" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{14548c44-d5cf-4d97-82b3-b955e88f5383}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Patient Mobility Score" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_patientmobilityscore" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="hsa_patientmobilityscore" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_645" id="90e0068d-3169-4420-9805-9924d90b7574" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Tasks" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{a9e8c308-bb40-4db5-9455-f5dce6edb36d}" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false">
+                          <parameters>
+                            <UClientActivities>phonecall,task</UClientActivities>
+                            <UClientDisplayActivityUsing>defaultfields</UClientDisplayActivityUsing>
+                            <UClientActivityCardMap>appointment:4201:,campaignactivity:4402:,campaignresponse:4401:,email:4202:,fax:4204:,incidentresolution:4206:,letter:4207:,opportunityclose:4208:,orderclose:4209:,phonecall:4210:,quoteclose:4211:,recurringappointmentmaster:4251:,serviceappointment:4214:,socialactivity:4216:,task:4212:,adx_alertsubscription:11169:,adx_inviteredemption:11172:,adx_portalcomment:11233:,ctd_sampleactivity:11367:,msdyn_approval:10354:,msdyn_bookingalert:10324:,msdyn_ocliveworkitem:10596:,msdyn_ocoutboundmessage:10710:,msdyn_ocsession:10605:,msemr_appointmentemr:10712:,msfp_alert:10261:,msfp_surveyinvite:10271:,msfp_surveyresponse:10273:,</UClientActivityCardMap>
+                            <UClientActivitiesConfigurationJSON>{"appointment":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"campaignactivity":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"email":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"fax":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"incidentresolution":{"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"letter":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"opportunityclose":{"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"orderclose":{"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"phonecall":{"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"quoteclose":{"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"recurringappointmentmaster":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"socialactivity":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"adx_alertsubscription":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"adx_inviteredemption":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"adx_portalcomment":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"ctd_sampleactivity":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msdyn_approval":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msdyn_bookingalert":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msdyn_ocliveworkitem":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msdyn_ocoutboundmessage":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msdyn_ocsession":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msemr_appointmentemr":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msfp_alert":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msfp_surveyinvite":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msfp_surveyresponse":{"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"}}</UClientActivitiesConfigurationJSON>
+                            <UClientUniqueName>Task_history</UClientUniqueName>
+                            <UClientEnableSearch>false</UClientEnableSearch>
+                            <UClientShowFilterPane>false</UClientShowFilterPane>
+                            <UClientExpandFilterPane>false</UClientExpandFilterPane>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="f7daf5dd-bd17-472f-b7d4-ca80fb539bc8" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Reference details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="tab_2_section_1" id="f8536e3e-909f-425c-8601-92e33797e5d7" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Admission details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bd8046ea-3e95-4ab1-a385-f225ccc1f349}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Intake Date/Time" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_intakedatetime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="hsa_intakedatetime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{66615dc5-2659-4619-b560-9e88af6ec21f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Admitted From" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_admittedfrom" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="hsa_admittedfrom" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bbc74cc2-d21e-49f3-a498-9f4782ef045e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Native Location" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_msemr_location" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_msemr_location" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_2_section_2" id="e070b41f-daf6-4f4f-94cb-08d6598337c9" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Diagnosis reference" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2de0190e-015d-4a37-bc24-c82c88d881a4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Primary Diagnosis" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_primarydiagnosis" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="hsa_primarydiagnosis" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{577833ac-c943-4d03-a6b3-215923d58175}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Primary Diagnosis Code" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_primarydiagnosiscode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="hsa_primarydiagnosiscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dc74391e-9d68-45ae-9c54-0de52e7626e6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Average Length of Stay" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_averagelengthofstay" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="hsa_averagelengthofstay" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{24a80ef0-4943-4e7b-89f5-3da83f5b8918}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Predicted Discharge Date" languagecode="1033" />
+                        </labels>
+                        <control id="header_hsa_targetdischargedate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="hsa_targetdischargedate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_2_section_3" id="acd289ac-fbe4-41ba-8dd2-d9c41d9985d3" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Related" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{51ff988a-2126-48b4-b712-5f72320888c4}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Stay Identifier" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="hsa_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3051f9aa-e264-4d43-a3da-a34e80327d76}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Encounter" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_msemr_encounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hsa_msemr_encounter" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4741e29b-2c02-4edd-8ded-50a28526cae1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Insurance Coverage" languagecode="1033" />
+                        </labels>
+                        <control id="hsa_insurancecoverage" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="hsa_insurancecoverage" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{1a128cce-883d-4f05-8f42-a10b0c8e8c13}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{70703de3-d443-4f93-8ef2-451b8ca0c68b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3ef71c7b-93de-4449-b925-252d02dd38c4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f77fb705-9e2d-4a4c-9779-c1bffd3b5626}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{73ce9b5b-bd78-41a4-aadf-cc00a8cc7b6b}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Current Length of Stay" languagecode="1033" />
+              </labels>
+              <control id="header_hsa_currentlengthofstay" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="hsa_currentlengthofstay" disabled="false" />
+            </cell>
+            <cell locklevel="0" id="{d1c61c0d-e84f-4db1-8264-3624a45a026b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d99fb958-f7a4-4829-92c8-fdaf1e3e1ccd}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Discharge Date Target" languagecode="1033" />
+              </labels>
+              <control id="header_hsa_dischargedatetarget" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="hsa_dischargedatetarget" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{6f7e54ed-f87e-4aec-87ac-9ce84c194e65}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{faa8b505-3c8d-4a84-8f2d-7abcf05d6e88}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{58ab2a63-7b6e-4d03-90bb-bcc39840d6c8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3d38c56c-9934-41ad-af9e-b220f3259bf4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Discharge Planning form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A main form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

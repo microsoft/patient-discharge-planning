@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.22052.152" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>DischargePlanning</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Discharge Planning" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.1.3.4</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>HealthcareAcceleration</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Healthcare Acceleration" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>hsa</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>12300</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="2" />
+      <RootComponent type="1" schemaName="hsa_patientstay" behavior="0" />
+      <RootComponent type="1" schemaName="msemr_encounter" behavior="1" />
+      <RootComponent type="1" schemaName="msemr_location" behavior="1" />
+      <RootComponent type="1" schemaName="task" behavior="2" />
+      <RootComponent type="9" schemaName="hsa_ancillaryservices" behavior="0" />
+      <RootComponent type="9" schemaName="hsa_dischargetargetstatus" behavior="0" />
+      <RootComponent type="9" schemaName="hsa_dischargeto" behavior="0" />
+      <RootComponent type="9" schemaName="hsa_durablemedicalequipmentrequired" behavior="0" />
+      <RootComponent type="9" schemaName="hsa_flagcode" behavior="0" />
+      <RootComponent type="9" schemaName="hsa_insurancecoverage" behavior="0" />
+      <RootComponent type="20" id="{11dacb66-edeb-ec11-bb3d-000d3a1271cc}" behavior="0" />
+      <RootComponent type="20" id="{8e4266c5-5b7d-ec11-8d21-0022482cf4fd}" behavior="0" />
+      <RootComponent type="29" id="{1c8bf79f-d4b1-ec11-9840-000d3a9e1ade}" behavior="0" />
+      <RootComponent type="29" id="{6095886f-fdb0-ec11-9840-000d3a9e1ade}" behavior="0" />
+      <RootComponent type="62" schemaName="hsa_DischargePlanning" behavior="0" />
+      <RootComponent type="80" schemaName="hsa_DischargePlanning" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_encounter" displayName="Encounter" solution="FHIRCommonCore (3.0.3.2)">
+          <package>FHIRAnchor (2.1.3.1)</package>
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="1" schemaName="msemr_encounter" displayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_location" displayName="Native Location" solution="FHIRCommonCore (3.0.3.2)">
+          <package>FHIRAnchor (2.1.3.1)</package>
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="1" schemaName="msemr_location" displayName="Native Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_location" displayName="Native Location" solution="FHIRCommonCore (3.0.3.2)">
+          <package>FHIRAnchor (2.1.3.1)</package>
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_PatientStay_location_relatedlocation" displayName="hsa_PatientStay_location_relatedlocation" parentSchemaName="msemr_location" parentDisplayName="Native Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_encounterid" displayName="Encounter" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" solution="FHIRCommonCore (3.0.3.2)">
+          <package>FHIRAnchor (2.1.3.1)</package>
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_PatientStay_encounter_relatedencounter" displayName="hsa_PatientStay_encounter_relatedencounter" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_name" displayName="Encounter Name" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" solution="FHIRCommonCore (3.0.3.2)">
+          <package>FHIRAnchor (2.1.3.1)</package>
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_PatientStay_encounter_relatedencounter" displayName="hsa_PatientStay_encounter_relatedencounter" parentSchemaName="msemr_encounter" parentDisplayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_locationid" displayName="Location" parentSchemaName="msemr_location" parentDisplayName="Native Location" solution="FHIRCommonCore (3.0.3.2)">
+          <package>FHIRAnchor (2.1.3.1)</package>
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_PatientStay_location_relatedlocation" displayName="hsa_PatientStay_location_relatedlocation" parentSchemaName="msemr_location" parentDisplayName="Native Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_name" displayName="Name" parentSchemaName="msemr_location" parentDisplayName="Native Location" solution="FHIRCommonCore (3.0.3.2)">
+          <package>FHIRAnchor (2.1.3.1)</package>
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="10" schemaName="hsa_PatientStay_location_relatedlocation" displayName="hsa_PatientStay_location_relatedlocation" parentSchemaName="msemr_location" parentDisplayName="Native Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msemr_taskpriority" displayName="Task Priority" parentSchemaName="task" parentDisplayName="Task" solution="FHIRAdministrationCore (3.0.3.1)">
+          <package>FHIRAnchor (2.1.3.1)</package>
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="26" schemaName="Open Discharge Prep Tasks" displayName="Open Discharge Prep Tasks" parentSchemaName="task" parentDisplayName="Task" id="{7562adce-3cb0-ec11-9840-000d3a9e1ade}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Task" parentDisplayName="Task" solution="msdynce_Activities (9.0.1.2033)" id="{16654191-19ad-48ca-9e46-c4b4fbdad76f}" />
+        <Dependent type="80" schemaName="hsa_DischargePlanning" displayName="Discharge Planning" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Task quick create form." parentDisplayName="Task" solution="msdynce_Activities (9.0.1.2033)" id="{a1c8a6dc-8804-4019-9c78-7dbe86560ea1}" />
+        <Dependent type="80" schemaName="hsa_DischargePlanning" displayName="Discharge Planning" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="hsa_DischargePlanning" displayName="Discharge Planning" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr_/Icons/Encounters.SVG" displayName="msemr_/Icons/Encounters.SVG" solution="FHIRCommonCore (3.0.3.2)">
+          <package>FHIRAnchor (2.1.3.1)</package>
+          <package>HealthcareFoundationAnchor (2.1.3.24)</package>
+        </Required>
+        <Dependent type="1" schemaName="msemr_encounter" displayName="Encounter" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2205.2010)" />
+        <Dependent type="68" id="{a4f3f13e-0525-4352-b776-25be7dbf35b1}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

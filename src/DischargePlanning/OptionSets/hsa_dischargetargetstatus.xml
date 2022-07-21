@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="hsa_dischargetargetstatus" localizedName="Discharge Target Status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.1.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Discharge Target Status" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="123000000" ExternalValue="">
+      <labels>
+        <label description="💚" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="123000001" ExternalValue="">
+      <labels>
+        <label description="🟨" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="123000002" ExternalValue="">
+      <labels>
+        <label description="🔴" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

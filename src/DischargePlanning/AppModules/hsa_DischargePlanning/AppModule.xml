@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>hsa_DischargePlanning</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="hsa_patientstay" />
+    <AppModuleComponent type="26" id="{348ef680-5bb0-ec11-9840-000d3a9e1ade}" />
+    <AppModuleComponent type="60" id="{d088cce7-83c4-4df2-ace7-c7c75b2b47f7}" />
+    <AppModuleComponent type="1" schemaName="task" />
+    <AppModuleComponent type="26" id="{7562adce-3cb0-ec11-9840-000d3a9e1ade}" />
+    <AppModuleComponent type="60" id="{a1c8a6dc-8804-4019-9c78-7dbe86560ea1}" />
+    <AppModuleComponent type="60" id="{16654191-19ad-48ca-9e46-c4b4fbdad76f}" />
+    <AppModuleComponent type="62" schemaName="hsa_DischargePlanning" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Discharge Planning" languagecode="1033" />
+  </LocalizedNames>
+</AppModule>

@@ -1,0 +1,78 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "impersonation": {},
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "ctd_sharedcommondataserviceforapps_77eb0"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_Patient_Stay_is_modified": {
+          "metadata": {
+            "operationMetadataId": "d0f7270b-94e7-4560-ae2c-3c38793779ae"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "hsa_patientstay",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filterexpression": "contains(hsa_avoidabledelay,'wheelchair')",
+              "subscriptionRequest/runas": 1,
+              "subscriptionRequest/name": "1c8bf79f-d4b1-ec11-9840-000d3a9e1ade"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Create_a_task_to_source_the_wheelchair": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "ecdc9506-d6ce-4c93-b154-d1d6e7f460bf"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "CreateRecord"
+            },
+            "parameters": {
+              "entityName": "tasks",
+              "item/subject": "Source a wheelchair and bring to room @{triggerOutputs()?['body/hsa_name']}",
+              "item/scheduledend": "@triggerOutputs()?['body/hsa_dischargedatetarget']",
+              "item/regardingobjectid_hsa_patientstay_task@odata.bind": "hsa_patientstaies(@{triggerOutputs()?['body/hsa_patientstayid']})"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}
