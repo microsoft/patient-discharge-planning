@@ -23,7 +23,12 @@
 
 - Model Driven Power App: Discharge Planning
 - Table: Patient Stay
-- Security Role: [TBD]
+- Security Roles: 
+    - Discharge Planning User
+    - Discharge Planning Administrator
+- Automations:
+    - Sample: Discharge task creation - Example automated workflow to create and assign tasks based on keywords in the "barriers" field for a Patient Stay.
+    - Set Discharge Status - Sets the indicator icon based on the selected status
 
 ## Design Decisions
 
