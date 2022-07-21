@@ -79,7 +79,7 @@ Leveraging capabilities in the Microsoft healthcare industry platform to address
 This repository includes sample data that allows testing/modification without requiring a live FHIR integration.
 
 1. Import the *PatientStays.csv* file found in the solutions folder of this repository
-    1. Not sure how? Navigate to *Power Apps Maker Portal->Data->Rounding Detail->Data* then use the **Import from Excel** action
+    1. Not sure how? Navigate to *Power Apps Maker Portal->Data->Patient Stays->Data* then use the **Import from Excel** action
 
 1. Optional: Update references for each *Patient* record to a related Patient, Encounter, and Location. Doing so will enable additional views/reporting summarized for an Encounter (regardless of Location), summarized for a Location (regardless of Patient), etc.
 
