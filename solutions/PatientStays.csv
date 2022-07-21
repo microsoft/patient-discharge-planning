@@ -1,0 +1,12 @@
+﻿Flag,Name,Patient (Contact),Primary Diagnosis,Discharge Target Status,Discharge Date Target,Discharge To,Insurance Coverage,Current Length of Stay,Ancillary Services,Patient Mobility Score,Durable Medical Equipment Required,Avoidable Delay,Criteria for Discharge,Admitted From
+🚩,B1/204A,,Sepsis,🔴,5/28/2022,🏢 Rehab Center,Blue Cross,71,PT; OT; ST,6,Walker; Wheelchair,Transportation Need,BM,🏢 Rehab Center
+,B1/204B,,Cystic Fibrosis,🔴,5/26/2022,🏢 Rehab Center,Medicare,60,PT,,Wheelchair,,Blood count rise,🏠 Home
+🚩,B1/205A,,Bronchitis,🔴,5/27/2022,👩‍⚕️ Skilled Nursing Facility,,66,PT; OT,7,Wheelchair,DME not avalible,BW,🏠 Home
+,B1/205B,,Bronchitis,💚,5/29/2022,👩‍⚕️ Skilled Nursing Facility,Private Pay,58,OT,8,,,Walk the hall ,👩‍⚕️ Skilled Nursing Facility
+,B1/206,,Pneumonia,🟨,5/24/2022,🧓 Assisted Living,Medicaid,61,PT,9,,,Mobility increase to a 6,🧓 Assisted Living
+🚩,B1/207,,Sepsis,💚,5/28/2022,🛌 Long Term Acute Care,Medicare,63,PT; OT,9,,needs a wheelchair,,🛌 Long Term Acute Care
+,B1/208,,Cystic Fibrosis,🔴,5/23/2022,🏠 Home,Aetna,62,PT,5,,,,🏠 Home
+🚩,B1/209,,Sepsis,🟨,5/24/2022,🛌 Long Term Acute Care,Blue Cross,63,OT,4,Wheelchair,Need wheelchair in the ward,,🏠 Home
+,B1/210,,Pneumonia,🟨,5/25/2022,🏢 Rehab Center,Blue Cross,63,,3,,,,🧓 Assisted Living
+,B1/211A,,Pneumonia,💚,5/26/2022,🧓 Assisted Living,Aetna,58,PT,4,,,,🧓 Assisted Living
+,B1/211B,,Pneumonia,💚,5/26/2022,🏠 Home,Medicare,65,PT,1,,,,🏠 Home

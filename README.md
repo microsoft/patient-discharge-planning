@@ -29,11 +29,13 @@ Leveraging capabilities in the Microsoft healthcare industry platform to address
 ## Deployment
 
 1. Ensure that dependencies (above) are met and that you have an Environment Maker role (or equivalent) in the Environment
-1. Deploy managed solution to a Dataverse environment
-    1. Publish the *Non-Clinical Rounding* and *Rounding History* Power Apps
+1. Deploy the current version of the managed solution to a Dataverse environment
+    1. Publish the *Discharge Planning* Power App
 1. Assign security roles
 1. Deploy sample data (or create your own)
 1. Share app with users and assign security roles
+
+*The packaged solution .zip files included in this repository are intended for testing and educational purposes.*
 
 ## Major components
 
