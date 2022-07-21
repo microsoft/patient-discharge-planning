@@ -4,9 +4,9 @@ Leveraging capabilities in the Microsoft healthcare industry platform to address
 
 ![Sample screenshot of discharge planning board and mobile app](./images/PatientDischargePlanningBoardAndMobile.png)
 
-| Addressable challenges| Solution framework|
+| Addressable challenges| Solution approach|
 |---|------|
-| - ADT system discharge messaging is latent, often not occurring until hours after patient left<br>- On the ground, plans and reminders are handled on paper which is prone to error and puts additional burden on clinicians<br>- Lack of reporting <br>- Follow up and follow through is manual <br>- People are hunting down the same information<br>- Troubleshooting must be synchronized | - automate patient data <br>- aggregate the relevant data<br>- Provide quick filtering and visualizations that help with prioritization <br>- Use secure messaging to asynchronously communicate and resolve barriers to discharge<br>- Automate task management & reporting for process improvement |
+| - ADT system discharge messaging is latent, often not occurring until hours after patient left<br>- On the ground, plans and reminders are handled on paper which is prone to error and puts additional burden on clinicians<br>- Lack of reporting <br>- Follow up and follow through is manual <br>- People are hunting down the same information<br>- Troubleshooting must be synchronized |- Aggregate and visualize the relevant data<br>- Provide quick filtering and visualizations that help with prioritization <br>- Use secure messaging to asynchronously communicate and resolve barriers to discharge<br> - Automate patient experience workflow<br>- Automate task management & reporting for process improvement |
 
 ## Features
 
